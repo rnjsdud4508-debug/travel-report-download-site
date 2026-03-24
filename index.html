@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>출장내역서 자동완성 프로그램 다운로드</title>
+  <style>
+    :root {
+      --bg: #f3f7fb;
+      --card: #ffffff;
+      --text: #1e293b;
+      --muted: #5b6470;
+      --line: #d5dde7;
+      --accent: #0f4c81;
+      --accent-dark: #0c3a63;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Malgun Gothic", "맑은 고딕", sans-serif;
+      background:
+        radial-gradient(circle at top left, #dbeafe 0, transparent 28%),
+        linear-gradient(180deg, #eef4fb 0%, #f7fafc 100%);
+      color: var(--text);
+    }
+    .wrap {
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 40px 20px 64px;
+    }
+    .hero {
+      background: linear-gradient(135deg, #0f4c81 0%, #195d96 100%);
+      color: #fff;
+      border-radius: 20px;
+      padding: 28px 28px 24px;
+      box-shadow: 0 18px 50px rgba(15, 76, 129, 0.16);
+    }
+    .hero h1 {
+      margin: 0 0 10px;
+      font-size: 30px;
+      line-height: 1.25;
+    }
+    .hero p {
+      margin: 0;
+      font-size: 16px;
+      line-height: 1.7;
+      opacity: 0.96;
+    }
+    .grid {
+      display: grid;
+      gap: 18px;
+      margin-top: 24px;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      padding: 22px;
+      box-shadow: 0 12px 30px rgba(15, 23, 42, 0.05);
+    }
+    .card h2 {
+      margin: 0 0 8px;
+      font-size: 22px;
+    }
+    .meta {
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.7;
+      margin-bottom: 18px;
+    }
+    .btn {
+      display: inline-block;
+      padding: 12px 18px;
+      border-radius: 999px;
+      background: var(--accent);
+      color: #fff;
+      text-decoration: none;
+      font-weight: 700;
+    }
+    .btn:hover {
+      background: var(--accent-dark);
+    }
+    .note {
+      margin-top: 22px;
+      padding: 18px 20px;
+      background: rgba(255, 255, 255, 0.84);
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      color: var(--muted);
+      line-height: 1.8;
+      font-size: 14px;
+    }
+    ul {
+      margin: 10px 0 0 18px;
+      padding: 0;
+    }
+    li { margin: 4px 0; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <section class="hero">
+      <h1>출장내역서 자동완성 프로그램 다운로드</h1>
+      <p>근무지외출장 원본 엑셀을 기준으로 수정된 출장내역서, TravalBackForm_2.0, 여비 지급명세서를 생성하는 프로그램입니다.</p>
+    </section>
+
+    <section class="grid">
+      <article class="card">
+        <h2>프로그램</h2>
+        <div class="meta">
+          실행 파일과 압축파일을 함께 제공합니다.<br>
+          일반적으로는 압축파일 다운로드 후 압축 해제를 권장합니다.
+        </div>
+        <a class="btn" href="files/travel_report_tool.zip" download="travel_report_tool.zip">출장내역서자동완성.zip 다운로드</a>
+        <div class="meta" style="margin-top:12px; margin-bottom:0;">
+          직접 실행 파일이 필요하면 아래 링크를 사용합니다.
+        </div>
+        <a class="btn" style="margin-top:10px;" href="files/travel_report_tool.exe" download="출장내역서자동완성.exe">출장내역서자동완성.exe 다운로드</a>
+      </article>
+
+      <article class="card">
+        <h2>사용방법 PDF</h2>
+        <div class="meta">
+          원본 noname.xlsx 다운로드 방법부터<br>
+          실행, 파일 선택, 결과 확인까지 정리한 문서입니다.
+        </div>
+        <a class="btn" href="files/travel_report_manual.pdf" download="출장내역서 자동완성 프로그램 사용방법.pdf">사용방법 PDF 다운로드</a>
+      </article>
+    </section>
+
+    <section class="note">
+      <strong>사용 순서</strong>
+      <ul>
+        <li>사용방법 PDF를 먼저 열어서 원본 noname.xlsx 다운로드 방법을 확인합니다.</li>
+        <li>가급적 <code>zip</code> 파일을 다운로드한 뒤 압축을 풀고, 안의 <code>출장내역서자동완성.exe</code>를 실행합니다.</li>
+        <li>원본 엑셀 파일 또는 그 파일이 들어 있는 폴더를 선택합니다.</li>
+        <li>생성된 generated 폴더 안의 결과 파일 3개를 확인합니다.</li>
+      </ul>
+    </section>
+  </div>
+</body>
+</html>
